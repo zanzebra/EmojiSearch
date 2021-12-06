@@ -6,17 +6,18 @@ export const StyledSideDrawer = styled.div`
   height: 100vh;
   z-index: 1;
   overflow-y: auto;
-  max-width: 500px;
+  max-width: 300px;
   width: 100%;
   background: #2e2e2e;
 `;
 
 export const StyledMainContainer = styled.div`
-  width: calc(100% - 500px);
+  width: calc(100% - 300px);
+  height: 100%;
   display: flex;
   transition: all 0.3s ease-in-out;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 40px 15px;
 `;
 
 export const Grid = styled.div`

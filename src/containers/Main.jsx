@@ -1,5 +1,5 @@
 import React from "react";
-import { Header } from "../components";
+import { Header, Search, Carousel } from "../components";
 import { StyledMainContainer, Grid } from "./styles";
 
 const MainContainer = () => {
@@ -7,6 +7,8 @@ const MainContainer = () => {
     <StyledMainContainer>
       <Grid>
         <Header text="EmojiSearch" />
+        <Search />
+        <Carousel />
       </Grid>
     </StyledMainContainer>
   );
