@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { MiniCardList } from "../components";
 import { StyledSideDrawer } from "./styles";
 
 const SideDrawer = () => {
-  return <StyledSideDrawer>HEllo from sidebar</StyledSideDrawer>;
+  return (
+    <StyledSideDrawer>
+      <MiniCardList />
+    </StyledSideDrawer>
+  );
 };
 
 export default SideDrawer;
