@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { filterByKeywords } from "../utils";
 import { Context } from "../context/AppContext";
 import {
   StyledSearchContainer,
@@ -7,21 +8,30 @@ import {
 } from "./styles";
 
 const Search = () => {
-  const { filteredEmojiList, filterKeywords, setActiveEmojiHandler } =
-    useContext(Context);
+  const {
+    filteredEmojiList,
+    setActiveEmojiHandler,
+    emojiList,
+    setFilteredEmojiList,
+  } = useContext(Context);
+
+  const filterKeywords = (newKeywords) => {
+    const newFilteredList = filterByKeywords(emojiList || [], newKeywords);
+    setFilteredEmojiList && setFilteredEmojiList(newFilteredList);
+  };
 
   const [searchValue, setSearchValue] = useState("");
 
   const handleChange = (e) => {
     setSearchValue(e.target.value);
-    filterKeywords(e.target.value);
+    filterKeywords && filterKeywords(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     filteredEmojiList.length > 0 && setActiveEmojiHandler(filteredEmojiList[0]);
   };
-  console.log("searchValue");
+
   return (
     <StyledSearchContainer onSubmit={handleSubmit}>
       <StyledSearchInput

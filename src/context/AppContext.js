@@ -17,11 +17,6 @@ const AppContext = ({ children }) => {
     setActiveEmoji(value);
   };
 
-  const filterKeywords = (newKeywords) => {
-    const newFilteredList = filterByKeywords(emojiList, newKeywords);
-    setFilteredEmojiList(newFilteredList);
-  };
-
   return (
     <Context.Provider
       value={{
@@ -29,7 +24,7 @@ const AppContext = ({ children }) => {
         activeEmoji,
         setActiveEmojiHandler,
         filteredEmojiList,
-        filterKeywords,
+        setFilteredEmojiList,
       }}
     >
       {children}

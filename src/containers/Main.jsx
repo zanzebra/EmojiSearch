@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../context/AppContext";
-import { Header, Search, Carousel } from "../components";
+import { Header, Search, CardDeck } from "../components";
 import { StyledMainContainer, Grid } from "./styles";
 
 const MainContainer = () => {
@@ -10,7 +10,7 @@ const MainContainer = () => {
       <Grid>
         <Header text="EmojiSearch" />
         <Search />
-        <Carousel />
+        <CardDeck />
       </Grid>
     </StyledMainContainer>
   );

@@ -108,28 +108,6 @@ export const StyledSearchButton = styled.button`
     { 425: "80px" },
   ])};
 `;
-export const StyledNavigation = styled.div`
-  display: flex;
-  width: 300px;
-  margin: 20px 0;
-  justify-content: space-between;
-`;
-
-export const StyledNavCircle = styled.div`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background: #2e2e2e;
-  cursor: pointer;
-  svg {
-    width: 20px;
-    height: 12px;
-  }
-`;
 
 export const StyledCardDeck = styled.div`
   display: flex;
