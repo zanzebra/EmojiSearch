@@ -28,4 +28,6 @@ Other dependencies used by this project
     Styled Components
 
 
+### UI/UX design for this project at [FigmaFileDesign](https://www.figma.com/file/0ap8JX9VRrOnBoqo29uokZ/Emogi-Search?node-id=0%3A1)
+
 #### **Created by Codexebra** 
