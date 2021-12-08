@@ -5,8 +5,8 @@ import CardDeck from "./CardDeck";
 const Carousel = () => {
   return (
     <Fragment>
-      <Navigation />
       <CardDeck />
+      {/* <Navigation /> */}
     </Fragment>
   );
 };

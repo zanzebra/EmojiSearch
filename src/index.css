@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
 body {
   margin: 0;
+  background: #171717;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,5 +12,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #333;
-  font-family: "Yeseva One", sans-serif;
+  font-family: "Open Sans", "Yeseva One", sans-serif;
+}
+button {
+  cursor: pointer;
+  outline: none;
 }
