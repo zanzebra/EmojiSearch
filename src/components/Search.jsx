@@ -19,7 +19,7 @@ const Search = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setActiveEmojiHandler(filteredEmojiList[0]);
+    filteredEmojiList.length > 0 && setActiveEmojiHandler(filteredEmojiList[0]);
   };
   console.log("searchValue");
   return (

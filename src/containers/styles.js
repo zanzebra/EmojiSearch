@@ -16,13 +16,13 @@ export const StyledSideDrawer = styled.div`
     `}
   @media (max-width: 768px) {
     position: fixed;
-    height: 120px;
-    bottom: 0;
+    height: 80px;
+    top: 0;
     width: 100vw;
-    background: #2e2e2e;
+    // background: #2e2e2e;
     overflow-y: hidden;
     max-width: 100%;
-    padding: 0px 5px;
+    padding: 0px;
     ${({ length }) =>
       length <= 0 &&
       css`
@@ -60,8 +60,7 @@ export const StyledMainContainer = styled.div`
     { 1024: "30px" },
     { 768: "30px" },
     { 425: "30px" },
-    { 375: "20px" },
-    { 320: "20px" },
+    { 375: "15px" },
   ])}
   @media (max-width: 768px) {
     width: 100%;

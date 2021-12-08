@@ -4,12 +4,17 @@ import PropTypes from "prop-types";
 import { StyledMiniCard } from "./styles";
 
 const MiniCard = ({ emoji }) => {
-  const { setActiveEmojiHandler } = useContext(Context);
+  const { setActiveEmojiHandler, activeEmoji } = useContext(Context);
   const handleEmojiClick = () => {
     setActiveEmojiHandler(emoji);
   };
   return (
-    <StyledMiniCard onClick={handleEmojiClick}>{emoji.symbol}</StyledMiniCard>
+    <StyledMiniCard
+      onClick={handleEmojiClick}
+      active={activeEmoji.title === emoji.title}
+    >
+      {emoji.symbol}
+    </StyledMiniCard>
   );
 };
 
