@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import Navigation from "./Navigation";
 import CardDeck from "./CardDeck";
 
 const Carousel = () => {
