@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { emojiList as emojiData } from "../data";
-import { filterByKeywords } from "../utils";
 
 export const Context = React.createContext({});
 
